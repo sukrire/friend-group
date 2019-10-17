@@ -40,3 +40,50 @@ Does it allow people with no connections?
 Does it assume that connections are always reciprocal (e.g. if A is B's friend, does B automatically consider A a friend too?)
 
 """
+"""
+my_group =
+my_group = {
+    'Jill' : {
+        'age'           : 26,
+        'job'           : 'biologist',
+        'connections'   : {
+            'Jill'      : ['self'],
+            'Zalika'    : ['friend'],
+            'John'      : ['partner'],
+            'Nash'      : []  
+        }
+    },
+    'Zalika' : {
+        'age'           : 28,
+        'job'           : 'artist',
+        'connections'   : {
+            'Jill'      : ['friend'],
+            'Zalika'    : ['self'],
+            'John'      : [],
+            'Nash'      : []  
+        }
+    },
+    'John' : {
+        'age'           : 27,
+        'job'           : 'writer',
+        'connections'   : {
+            'Jill'      : ['partner'],
+            'Zalika'    : [],
+            'John'      : ['self'],
+            'Nash'      : ['cousin']  
+        }
+    },
+    'Nash' : {
+        'age'           : 34,
+        'job'           : 'chef',
+        'connections'   : {
+            'Jill'      : [],
+            'Zalika'    : ['landlord'],
+            'John'      : ['cousin'],
+            'Nash'      : ['self']  
+        }
+    }
+}
+
+print(my_group) 
+"""
